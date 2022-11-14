@@ -13,7 +13,7 @@ namespace Double_linked_list
             //node class represent 
 
             public int noMhs;
-            
+            public string name;
 
         }
         static void Main(string[] args)

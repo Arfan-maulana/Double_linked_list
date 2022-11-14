@@ -19,6 +19,13 @@ namespace Double_linked_list
 
             public Node prev;
         }
+
+        class DoubleLinkedList
+        {
+            
+
+
+        }
         static void Main(string[] args)
         {
 

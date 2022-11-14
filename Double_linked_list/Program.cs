@@ -10,7 +10,7 @@ namespace Double_linked_list
     {
         class Node
         {
-
+            
         }
         static void Main(string[] args)
         {

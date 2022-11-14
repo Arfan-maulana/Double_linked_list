@@ -47,9 +47,12 @@ namespace Double_linked_list
                     Console.WriteLine("\n Duplicate number not allowed ");
                     return;
                 }
-
-
-
+                newNode.next = START;
+                    if(START != null)
+                    START.prev = newNode;
+                    START = newNode;
+                    return;
+                   
             }
         }
         static void Main(string[] args)

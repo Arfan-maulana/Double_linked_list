@@ -14,7 +14,10 @@ namespace Double_linked_list
 
             public int noMhs;
             public string name;
+            //point to the seucceding node
+            public Node next;
 
+            
         }
         static void Main(string[] args)
         {

@@ -29,6 +29,18 @@ namespace Double_linked_list
             {
                 START = null;
             }
+
+            public void addnote()
+            {
+                int nim;
+                string nm;
+                Console.WriteLine("/n Enter the roll number off the student :");
+                nim = Convert.ToInt32(Console.ReadLine());
+
+
+
+
+            }
         }
         static void Main(string[] args)
         {

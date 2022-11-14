@@ -42,21 +42,40 @@ namespace Double_linked_list
                 newNode.noMhs = nim;
                 newNode.name = nm;
 
-                if((START != null) && (nim == START.noMhs))
+                if ((START != null) && (nim == START.noMhs))
                 {
                     Console.WriteLine("\n Duplicate number not allowed ");
                     return;
                 }
                 newNode.next = START;
-                    if(START != null)
+                if (START != null)
                     START.prev = newNode;
-                    START = newNode;
-                    return;
-                   
+                START = newNode;
+                return;
+
+
+                Node previous, current;
+                for (current = previous = START;
+                    current != null && nim >= current.noMhs;
+                    previous = current, current = current.next)
+                {
+                    if (nim == current.noMhs)
+                    {
+                        Console.WriteLine("\n Duplicated roll numbers not alowed");
+                        return;
+                    }
+
+                    newNode.next = current;
+                    newNode.prev = previous;
+
+
+                }
             }
-        }
-        static void Main(string[] args)
-        {
+            static void Main(string[] args)
+            {
+
+            }
+
 
         }
     }

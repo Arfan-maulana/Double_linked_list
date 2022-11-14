@@ -10,7 +10,11 @@ namespace Double_linked_list
     {
         class Node
         {
+            //node class represent 
+
+            public int noMhs;
             
+
         }
         static void Main(string[] args)
         {

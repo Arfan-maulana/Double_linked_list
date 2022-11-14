@@ -99,10 +99,21 @@ namespace Double_linked_list
                     previous.next = null;
                     return true;
                 }
-
-
-
-
+                // node beetwen two nodes in the ist
+                if (current == START)
+                {
+                    START = START.next;
+                    if (START != null)
+                        START.prev = null;
+                    return true;
+                }
+                
+                previous.next = current.next;
+                current.next.prev = previous;
+                return true;
+            }
+            public void ascending()
+            {
 
             }
             static void Main(string[] args)
